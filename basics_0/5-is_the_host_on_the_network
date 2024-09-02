@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script is used to ping 5 times an IP adress and return default string if no argument is passed
+ping -c 5 $1
+if [ ! $? -eq 0 ]; then
+    echo "5-is_the_host_on_the_network {IP_ADDRESS}"
+    exit 1
+fi
