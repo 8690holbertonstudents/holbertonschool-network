@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This script is used to display only listening sockets and show the process id and process name
+netstat -lp
